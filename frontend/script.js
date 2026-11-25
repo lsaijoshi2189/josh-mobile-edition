@@ -74,4 +74,4 @@ document.getElementById('send').onclick=()=>{
 }; 
  
 function add(t,w){const d=document.createElement('div');d.className='msg 
-'+w;d.innerText=t;chat.appendChild(d);chat.scrollTop=chat.scrollHeight;} 
+'+w;d.innerText=t;chat.appendChild(d);chat.scrollTop=chat.scrollHeight;}
