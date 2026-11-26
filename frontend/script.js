@@ -23,7 +23,19 @@ async function callGemini(p){
       const data=await res.json(); 
       if(data.error){ 
         lastErr=new Error(data.error.message); 
-        if(/high demand|temporar|quota|rate|unavailable|no longer available|deprecated/i.test(data.error.message)) continue; 
+       const errorMsg = data.error.message.toLowerCase();
+
+      if (
+          errorMsg.includes("high demand") ||
+          errorMsg.includes("temporar") ||
+          errorMsg.includes("quota") ||
+          errorMsg.includes("rate") ||
+          errorMsg.includes("unavailable") ||
+          errorMsg.includes("no longer available") ||
+          errorMsg.includes("deprecated")
+         ) {
+          continue;
+        }
         throw lastErr; 
       } 
       return data.candidates[0].content.parts[0].text; 
