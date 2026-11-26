@@ -1,9 +1,48 @@
-<button id="send">SEND</button>
 
-<button id="mic-btn">🎙</button>
+<h1>J.A.R.V.I.S</h1>
 
-<button id="clear-btn">🧹</button>
+<p>PERSONAL AI ASSISTANT</p>
 
-<button id="cam-btn">📷</button>
+<p>SYSTEM READY</p>
 
-<input type="file" id="img-input" accept="image/*" capture="environment" style="display:none">
+<h2>SYSTEM DIAGNOSTICS</h2>
+
+<div>
+    AI ENGINE <strong>● OPERATIONAL</strong>
+</div>
+
+<div>
+    CONNECTION <strong>● ONLINE</strong>
+</div>
+
+<div>
+    VOICE INTERFACE <strong>● READY</strong>
+</div>
+
+<div>
+    LONG-TERM MEMORY <strong>● ACTIVE</strong>
+</div>
+
+<div>
+    <button id="send">EXECUTE</button>
+
+    <button id="mic-btn">🎙</button>
+
+    <button id="cam-btn">📷</button>
+
+    <button id="clear-btn">CLEAR MEMORY</button>
+</div>
+
+<div>
+    <input type="file" id="img-input" accept="image/*" hidden>
+</div>
+
+<div id="chat"></div>
+
+<div>
+    <input type="text" id="msg" placeholder="Ask J.A.R.V.I.S anything...">
+</div>
+
+<div>
+    <button id="send">EXECUTE</button>
+</div>
