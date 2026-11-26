@@ -82,5 +82,4 @@ document.getElementById('send').onclick=()=>{
   add('YOU: '+t,'user'); input.value=''; askGemini(t); 
 }; 
  
-function add(t,w){const d=document.createElement('div');d.className='msg 
-'+w;d.innerText=t;chat.appendChild(d);chat.scrollTop=chat.scrollHeight;}
+function add(t,w){const d=document.createElement('div');d.className='msg '+w;d.innerText=t;chat.appendChild(d);chat.scrollTop=chat.scrollHeight;}
