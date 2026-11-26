@@ -1,48 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>J.A.R.V.I.S</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-<h1>J.A.R.V.I.S</h1>
+<body>
 
-<p>PERSONAL AI ASSISTANT</p>
+    <header>
+        <h1>J.A.R.V.I.S</h1>
+        <p>PERSONAL AI ASSISTANT</p>
+    </header>
 
-<p>SYSTEM READY</p>
+    <div class="core">
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+        <div class="center"></div>
+    </div>
 
-<h2>SYSTEM DIAGNOSTICS</h2>
+    <p class="core-text">SYSTEM READY</p>
 
-<div>
-    AI ENGINE <strong>● OPERATIONAL</strong>
-</div>
+    <div class="status">
+        <h2>SYSTEM DIAGNOSTICS</h2>
 
-<div>
-    CONNECTION <strong>● ONLINE</strong>
-</div>
+        <div class="row">
+            <span>AI ENGINE</span>
+            <b class="on">● OPERATIONAL</b>
+        </div>
 
-<div>
-    VOICE INTERFACE <strong>● READY</strong>
-</div>
+        <div class="row">
+            <span>CONNECTION</span>
+            <b class="on">● ONLINE</b>
+        </div>
 
-<div>
-    LONG-TERM MEMORY <strong>● ACTIVE</strong>
-</div>
+        <div class="row">
+            <span>VOICE INTERFACE</span>
+            <b class="on">● READY</b>
+        </div>
 
-<div>
-    <button id="send">EXECUTE</button>
+        <div class="row">
+            <span>LONG-TERM MEMORY</span>
+            <b class="on">● ACTIVE</b>
+        </div>
+    </div>
 
-    <button id="mic-btn">🎙</button>
+    <div class="chat" id="chat"></div>
 
-    <button id="cam-btn">📷</button>
+    <div class="input-area">
 
-    <button id="clear-btn">CLEAR MEMORY</button>
-</div>
+        <input id="msg" placeholder="Enter a command for J.A.R.V.I.S...">
 
-<div>
-    <input type="file" id="img-input" accept="image/*" hidden>
-</div>
+        <button id="send">EXECUTE</button>
 
-<div id="chat"></div>
+        <button id="mic-btn" aria-label="Activate voice input">🎙</button>
 
-<div>
-    <input type="text" id="msg" placeholder="Ask J.A.R.V.I.S anything...">
-</div>
+        <button id="cam-btn" aria-label="Analyze image">📷</button>
 
-<div>
-    <button id="send">EXECUTE</button>
-</div>
+        <button id="clear-btn">CLEAR MEMORY</button>
+
+        <input id="img-input" type="file" accept="image/*" style="display:none">
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
